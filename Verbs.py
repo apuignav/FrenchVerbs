@@ -96,6 +96,7 @@ verbList = list(set([ u'avoir',
                       u'tomber',
                       u'passer',
                       u'retourner',
+                      u'falloir'
                      ]))
 
 def loadVerbs(tree):
