@@ -96,7 +96,20 @@ verbList = list(set([ u'avoir',
                       u'tomber',
                       u'passer',
                       u'retourner',
-                      u'falloir'
+                      u'falloir',
+                      u'rencontrer',
+                      u'souhaiter',
+                      u'croire',
+                      u'dire',
+                      u'plaindre',
+                      u'occuper',
+                      u'taiser',
+                      u'remplir',
+                      u'éteindre',
+                      u'allumer',
+                      u'déplacer',
+                      u'injurier',
+                      u'voler'
                      ]))
 
 def loadVerbs(tree):
