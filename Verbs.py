@@ -109,7 +109,8 @@ verbList = list(set([ u'avoir',
                       u'allumer',
                       u'déplacer',
                       u'injurier',
-                      u'voler'
+                      u'voler',
+                      u'ajouter'
                      ]))
 
 def loadVerbs(tree):

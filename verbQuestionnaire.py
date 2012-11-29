@@ -13,7 +13,7 @@ mode = [ (u'Indicatif', u'Présent'),
          (u'Indicatif', u'Imparfait'),
          (u'Indicatif', u'Passé composé'),
          (u'Indicatif', u'Futur simple'),
-         (u'Conditionnel', u'Présent'),
+         (u'Présent', u'Conditionnel'),
         ]
 
 if __name__ == '__main__':
