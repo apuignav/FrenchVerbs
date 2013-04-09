@@ -1,4 +1,4 @@
-#!/bin/env python
+#!/usr/bin/env python
 # vim: set fileencoding=utf-8
 
 import random
@@ -42,7 +42,10 @@ if __name__ == '__main__':
           continue
       except:
         continue
-      answ = raw_input("%s: " % (u"%40s %s (%s)" % ("[%s - %s]" % (gr, tmps), personneList[personneNum], verb)).encode("utf-8"))
+      tempPrint = "[%s - %s]" % (gr, tmps)
+      if gr == u'Conditionnel':
+      	tempPrint = "[%s]" % (gr)      	
+      answ = raw_input("%s: " % (u"%40s %s (%s)" % (tempPrint, personneList[personneNum], verb)).encode("utf-8"))
       if not answ:
         raise KeyboardInterrupt()
       if fullTree[verb][gr][tmps][personneNum] == answ:
