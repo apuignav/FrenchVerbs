@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 # vim: set fileencoding=utf-8
 
 import random
@@ -44,7 +45,7 @@ if __name__ == '__main__':
         continue
       tempPrint = "[%s - %s]" % (gr, tmps)
       if gr == u'Conditionnel':
-      	tempPrint = "[%s]" % (gr)      	
+      	tempPrint = "[%s]" % (gr)
       answ = raw_input("%s: " % (u"%40s %s (%s)" % (tempPrint, personneList[personneNum], verb)).encode("utf-8"))
       if not answ:
         raise KeyboardInterrupt()
