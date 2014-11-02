@@ -4,8 +4,6 @@
 # @author Albert Puig (albert.puig@epfl.ch)
 # @date   27.11.2012
 
-from LaConjugaisonParser import getConjugation, eliminaTildes
-
 verbList = list(set([ u'avoir',
                       u'faire',
                       u'épeler',
@@ -116,6 +114,7 @@ verbList = list(set([ u'avoir',
 def loadVerbs(tree):
     for verb in verbList:
         if not verb in tree:
+            from LaConjugaisonParser import getConjugation, eliminaTildes
             print "Téléchargeant %s..." % eliminaTildes(verb).encode('utf-8')
             conj = getConjugation(verb)
             tree[verb] = conj
